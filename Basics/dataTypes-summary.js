@@ -29,3 +29,19 @@ const myfunction = function (){
 
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//memory concept
+
+//stack (primitive) heap(non-primitive)
+let myYoutubeName = "ombhor.yt";
+let anotherName = myYoutubeName; 
+anotherName= "om";
+console.log(myYoutubeName)
+console.log(anotherName)
+let user = {
+    email:"user@gmail.com",
+    upi:"user@"
+}

@@ -1,6 +1,10 @@
 //singleton => when we declare object as literal then it will not a singleton but when it will create from constructor then it will be singleton
 
 //object literals 
+
+
+
+
 // Object.create  it will create through constructor and its a singleton 
 
 const mySym = Symbol("key1");

@@ -17,6 +17,7 @@ const user = {
 
 // function chai (){
 //     let username ="om"
+//         console.log(this)
 //     console.log(this.username); //we can use it in object like upper example but not inthis case it will print undefined
 // }
 // chai()
@@ -33,22 +34,26 @@ const user = {
 
 const chai =  () => {
     let username ="om"
-    console.log(this); 
+    console.log(this.username) //undefined
+    console.log(this); // in this case it will print {} thats offcourse diff from simple function that it return many things
 }
-// chai()
+chai()
 
 
 
 const addTwo = (num1  ,num2) => {
     return num1+num2; //explicit return
 }
+
+
+
 // const addTwo = (num1 , num2) => num1+num2;// this is also valid ye maan leta hain for return ki apko isko likhane ki jarurat nhi i.e implicit function
 // const addTwo = (num1 , num2) => (num1+num2);// when curly braces are used then we need to write the return but if not then there is no need
 
 // const addTwo = (num1 , num2) => ({username : "om"});// for object  is no need
 
 
-console.log(addTwo(1,2));
+// console.log(addTwo(1,2));
 
 
 

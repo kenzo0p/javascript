@@ -6,22 +6,22 @@
     <title>Document</title>
 </head>
 <body style="background-color: #212121; color: white;">
-        <h1>old version fo passing api's i.e XMLHttpRequest</h1>
+    <h1>old version fo passing api's i.e XMLHttpRequest</h1>
 
-0	UNSENT	Client has been created. open() not called yet. <br>
-1	OPENED	open() has been called. <br>
-2	HEADERS_RECEIVED	send() has been called, and headers and status are available. <br>
-3	LOADING	Downloading; responseText holds partial data. <br>
-4	DONE	The operation is complete. <br>
+    0 UNSENT Client has been created. open() not called yet. <br>
+    1 OPENED open() has been called. <br>
+    2 HEADERS_RECEIVED send() has been called, and headers and status are available. <br>
+    3 LOADING Downloading; responseText holds partial data. <br>
+    4 DONE The operation is complete. <br>
 </body>
 <script>
     const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
     const xhr = new XMLHttpRequest();
     xhr.open('GET', requestUrl)
-    xhr.onreadystatechange = function(){
+    xhr.onreadystatechange = function () {
         console.log(xhr.readyState);
         if (xhr.readyState === 4) {
-            const data = JSON.parse(this.responseText)
+            const data = JSON.parse(this.responseText);
             console.log(typeof data);
             console.log(data.followers);
         }

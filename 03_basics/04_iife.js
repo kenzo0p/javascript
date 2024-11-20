@@ -13,7 +13,7 @@
 
 
 
-
+  
  ( (name) => {
     console.log(`DB CONNECTED 2 ${name}`)
  })("om") ;

@@ -1,3 +1,4 @@
+
 const user = {
     username: "om",
     price: 999,
@@ -13,11 +14,12 @@ const user = {
 // user.username = "sam";
 // user.welcomeMessage()
 
-// console.log(this)//{} empty object and in dev tool its window object 
+// console.log(this)//{} empty object and in dev tool its window object  in code editor we are on node environment so in this case for this there is no global context
 
 // function chai (){
 //     let username ="om"
 //         console.log(this)
+
 //     console.log(this.username); //we can use it in object like upper example but not inthis case it will print undefined
 // }
 // chai()
@@ -32,12 +34,12 @@ const user = {
 
 
 
-const chai =  () => {
-    let username ="om"
-    console.log(this.username) //undefined
-    console.log(this); // in this case it will print {} thats offcourse diff from simple function that it return many things
-}
-chai()
+// const chai =  () => {
+//     let username ="om"
+//     console.log(this.username) //undefined
+//     console.log(this); // in this case it will print {} thats offcourse diff from simple function that it return many things
+// }
+// chai()
 
 
 
@@ -59,6 +61,3 @@ const addTwo = (num1  ,num2) => {
 
 const myArray  =[2,3,4,5];
 // myArray.forEach()
-
-
-

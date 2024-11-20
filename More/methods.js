@@ -11,7 +11,6 @@ const calculator = {
 };
 
 // shorthand
-
 const calculatorTwo = {
   add(a, b) {
     return a + b;

@@ -64,7 +64,7 @@ if (true) {
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++Interesting+++++++++++++++++++++++++++++++++++
-
+// addOne(4)  it will be accessible 
 function addOne(num){
     return num + 1;
 }

@@ -84,9 +84,20 @@ const addTwo = function(num){
 
 // const x = 1;
 // {
-//   console.log(x); // ReferenceError
+//   console.log(x); // ReferenceError  in ths what will happen is that when we declare const x=2 then for this const x = 1 is not accesible because of shadowing
 //   const x = 2;
 // }
 
 
+const x = 1;
+{
+  const x = 2; // Inner `x` declared here (shadowing the outer `x`).
+  console.log(x); // Outputs: 2 (refers to the inner `x`).
+}
 
+
+// in var hoisting
+
+console.log(a); // undefined (hoisted, but not initialized)
+var a = 5;
+console.log(a); // 5 (initialized)

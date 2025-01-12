@@ -1,5 +1,5 @@
 const isPalindrome = (str) => {
-    str  = str.toLowerCase().replace(/\W/g ,"");
+    str  = str.toLowerCase().replace(/\W/g ,"");// for replacing non words if want replace words then small w
     let newString  = str.split("").reverse();
     let final = newString.join("");
 

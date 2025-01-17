@@ -10,7 +10,6 @@
 //     return sum;
 // }
 
-
 const sumOfDigits = (num) => {
     let arr = Array.from(String(num) ,Number);
     console.log(arr);

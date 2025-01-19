@@ -9,8 +9,6 @@
 //     })
 //     return count;
 // }
-
-
 const countVowels = (str) => {
     let vowels = ['a','e' ,'i' , 'o' ,'u'];
     let arr = str.split('');
@@ -22,6 +20,4 @@ const countVowels = (str) => {
     }
     return count;
 }
-
-
 console.log(countVowels("Hello World"));

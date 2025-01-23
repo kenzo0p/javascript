@@ -10,9 +10,8 @@
 
 // }
 
-
 const toSnakeCase = (str) => {
-    return str.toLowerCase().split(" ").join("_");
-}
+  return str.toLowerCase().split(" ").join("_");
+};
 
-console.log(toSnakeCase("hello world om"))
+console.log(toSnakeCase("hello world om"));

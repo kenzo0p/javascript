@@ -18,5 +18,4 @@ const calculateMean = (arr) => {
     let sum = arr.reduce((accum , curr) => accum + curr , 0)
     return sum/arr.length;
 }
-
 console.log(calculateMean([1,2,3,4,5]));

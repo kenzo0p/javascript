@@ -24,3 +24,4 @@ const findMedian = (arr) => {
 
 console.log(findMedian([3,4,7,4,3]));
 console.log(findMedian([2,4,6,8]));
+console.log(findMedian([2,2,6,8 , 2]));
